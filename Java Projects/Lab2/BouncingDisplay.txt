@@ -1,0 +1,62 @@
+// SmileyDisplay.txt
+//
+// ICS 45J Lab Assignments 2 and 3
+//
+// Information about the public aspects of the BouncingDisplay class.
+//
+// by Norman Jacobson, August 2012.
+
+public class BouncingDisplay extends BasicDisplay
+{
+	// Builds the BouncingDisplay with a black background
+	// and four walls along its outside edges.
+	public BouncingDisplay()
+	
+		
+	// Returns the color of the wall whose name is given by wallName.
+	// Legal parameters are
+	//	WallName.LEFT   - to get the color of the left wall
+	//  WallName.RIGHT  - to get the color of the right wall
+	//  WallName.TOP    - to get the color of the top wall
+	//  WallName.BOTTOM - to get the color of the bottom wall
+	// Any other WallName value returns null
+	public Color getWallColor(WallName wallName)
+	
+	
+	// Changes the color of the wall whose name is given by wallName
+	//  to the color given in newColor
+	// Legal parameters are
+	//	WallName.LEFT   - to set the color of the left wall
+	//  WallName.RIGHT  - to set the color of the right wall
+	//  WallName.TOP    - to set the color of the top wall
+	//  WallName.BOTTOM - to set the color of the bottom wall
+	// Any other WallName value causes no action - the color of
+	//  all walls remain unchanged
+	public void setWallColor(WallName wallName, Color newColor)
+	
+	
+	// Returns the coordinate of the "edge" of the wall whose name is
+	// given by wallName.  
+	// Legal parameters are
+	//	WallName.LEFT   - to get the position of the left wall's edge
+	//  WallName.RIGHT  - to get the position of the right wall's edge
+	//  WallName.TOP    - to get the position of the top wall's edge
+	//  WallName.BOTTOM - to get the position of the bottom wall's edge
+	// Any other WallName value causes the routine to return -1
+	//  all walls remain unchanged
+	//
+	// For example, if the left wall extends 10 pixels to the right 
+	// from the edge of the display, getEdge(WallName.LEFT) returns 10;
+	// if the bottom wall extends 10 pixels up from the bottom of
+	// the display, getEdge(WallName.RIGHT) returns BOTTOM_EDGE - 10,
+	// where BOTTOM_EDGE is the y-coordinate of the bottom edge of
+	// the display panel
+	public int getWallEdge(WallName wallName)
+	
+	
+	// Makes the run-time environment repaint the animation display screen.
+	// Call the routine each time what's displayed on the screen has changed,
+	// and you want the user to see that change--for example, call it to show
+	// each frame of the animation  (inherited)
+	public void repaint()
+}
