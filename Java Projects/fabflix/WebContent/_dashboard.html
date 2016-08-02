@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard Login</title>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+Dashboard login
+<br><br>
+<form action="logintest.java" method="POST">
+Email: <input type="text" name="email">
+<br><br>
+Password: <input type="password" name="password">
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="hidden" name="user" value="member">
+<input type="hidden" name="thispage" value="${pageContext.request.requestURI}">
+<input type="hidden" name="re" value="${param.thispage}">
+<div class="g-recaptcha" data-sitekey="6LelYxgTAAAAAH1Luug8efX1v-LVJ_6zIwB7pYy9"></div>
+</form>
+</body>
+</html>

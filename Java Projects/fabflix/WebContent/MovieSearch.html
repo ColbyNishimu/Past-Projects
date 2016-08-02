@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Movie Search</title>
+</head>
+<body>
+Please search for movies: <br>
+<br>
+<form action="search" method="GET">
+Title: <input type="text" name="title">
+<br><br>
+Year: <input type="text" name="year">
+<br><br>
+Director: <input type="text" name="director">
+<br><br>
+Stars Name: <input type="text" name="first_name"><input type="text" name="last_name">
+<br><br>
+	<input type="submit" value="Submit"><br>
+	<input type="hidden" name="pagenum" value="1">
+	<input type="hidden" name="rpp" value="10">
+	<input type="hidden" name="sort" value="tasc">
+</form>
+</body>
+</html>
